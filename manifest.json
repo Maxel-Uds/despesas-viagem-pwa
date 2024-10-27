@@ -1,0 +1,10 @@
+{
+  "name": "Controle de Despesas de Viagem",
+  "short_name": "Despesas",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#333333",
+  "description": "Aplicativo para controle de despesas de viagem",
+  "icons": []
+}

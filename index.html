@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="App de controle de despesas de viagem">
+    <title>Controle de Despesas de Viagem</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Controle de Despesas de Viagem</h1>
+    </header>
+
+    <main>
+        <section id="formulario">
+            <h2>Adicionar Despesa</h2>
+            <form id="expense-form">
+                <div class="form-inputs">
+                    <input type="text" id="descricao" required placeholder="Descrição do item">
+
+                    <input type="number" id="quantidade" min="1" required placeholder="Quantidade/Unidade">
+
+                    <input type="number" id="valor" step="0.01" required placeholder="Valor">
+                </div>
+
+                <div class="inline-select">
+                    <select id="moeda-from">
+                        <option value="USD" selected="true">USD</option>
+                        <option value="BRL">BRL</option>
+                    </select>
+
+                    <div class="icon">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+
+                    <select id="moeda-to">
+                        <option value="USD">USD</option>
+                        <option value="BRL" selected="true">BRL</option>
+                    </select>
+
+                </div>
+
+                <button type="submit" id="button">Adicionar Despesa</button>
+            </form>
+        </section>
+
+        <section id="lista-despesas">
+            <h2>Lista de Despesas</h2>
+            <ul id="despesas"></ul>
+            <p id="totalMoedaBRL">Total (BRL): 0.00</p>
+            <p id="totalMoedaUSD">Total (USD): 0.00</p>
+        </section>
+    </main>
+
+    <script src="js/core.js" defer="true" type="module"></script>
+    <script src="js/select-control.js" defer="true"></script>
+</body>
+
+</html>

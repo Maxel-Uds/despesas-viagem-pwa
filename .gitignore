@@ -1,0 +1,50 @@
+# Dependências do Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Ambiente de produção
+.env
+.env.*.local
+
+# Logs
+logs
+*.log
+yarn*.log
+npm-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diretórios de debug
+__pycache__/
+*.swp
+.idea/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Build
+dist/
+build/
+.tmp/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Sentry sourcemaps
+.sourcemap
+
+# Relatórios de erros
+*.stackdump
+*.stacktrace
+
+# Git
+.gitconfig
